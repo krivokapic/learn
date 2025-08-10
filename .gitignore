@@ -1,0 +1,6 @@
+.venv/
+venv/
+.pdf
+.out
+.o
+__pycache__

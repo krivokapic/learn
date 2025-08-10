@@ -1,0 +1,77 @@
+🔹 Foundational / Classic Papers
+
+    [Reinforcement Learning I: Introduction (Sutton & Barto Book)]
+
+        Not a paper, but its Chapter references cover many key ideas and algorithms.
+
+        Must-read for theoretical grounding.
+
+    "Learning from Delayed Rewards" – Christopher Watkins (1989)
+
+        Introduced Q-learning.
+
+    "Temporal Difference Learning and TD-Gammon" – Gerald Tesauro (1995)
+
+        Shows how TD-learning can learn to play backgammon at a strong level.
+
+    "Policy Gradient Methods for RL with Function Approximation" – Sutton et al. (1999)
+
+        Foundation of policy gradient methods, precursor to deep policy gradient work.
+
+🔹 Modern Deep Reinforcement Learning
+
+    "Playing Atari with Deep Reinforcement Learning" – Mnih et al. (2013)
+
+        First paper on Deep Q-Networks (DQN); landmark moment in deep RL.
+
+    "Human-Level Control through Deep Reinforcement Learning" – Mnih et al. (2015)
+
+        Official Nature paper version of DQN.
+
+    "Asynchronous Methods for Deep Reinforcement Learning" – Mnih et al. (2016)
+
+        Introduced A3C, a parallelized actor-critic method.
+
+    "Trust Region Policy Optimization" (TRPO) – Schulman et al. (2015)
+
+        Advanced policy optimization with constraints.
+
+    "Proximal Policy Optimization (PPO)" – Schulman et al. (2017)
+
+        Simpler and more efficient than TRPO, widely used in practice.
+
+    "Deterministic Policy Gradient Algorithms" – Silver et al. (2014)
+
+        Introduced DDPG (deep deterministic policy gradient), a method for continuous action spaces.
+
+    "Soft Actor-Critic (SAC)" – Haarnoja et al. (2018)
+
+        Combines entropy maximization and off-policy learning for robust training.
+
+🔹 Theoretical & Conceptual Papers
+
+    "The Option-Critic Architecture" – Bacon, Harb, Precup (2016)
+
+        For hierarchical reinforcement learning.
+
+    "Reward is Enough" – Silver et al. (2021)
+
+        A philosophical and theoretical argument for reward maximization as a foundation for intelligence.
+
+    "Double Q-learning" – Hasselt (2010)
+
+        Solution to overestimation bias in Q-learning.
+
+🔹 Suggested Reading Order for Beginners
+
+    Watkins (1989) – Q-learning
+
+    Sutton (1999) – Policy Gradients
+
+    Mnih (2013, 2015) – DQN
+
+    Schulman (2015, 2017) – TRPO, PPO
+
+    Haarnoja (2018) – SAC
+
+    Silver (2021) – Reward is Enough
