@@ -12,6 +12,7 @@ htmlcov/
 dist/
 build/
 *.egg-info/
+bin/
 
 .php-version
 ###> symfony/framework-bundle ###
