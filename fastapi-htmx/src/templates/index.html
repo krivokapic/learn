@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<p> fill out the form </p>
+
+<form>
+	<label for="name">Name:</label>
+	<input type="text" id="name" name="name">
+	<label for="email">Email:</label>
+	<input type="email" id="email" name="email"><br><br>
+	<input type="submit" value="Submit">
+	<input type="submit" value="Fill out defaults" hx-get="/default" hx-target="form" hx-swap="outerHTML">
+	<input type="submit" value="Reset" hx-get="/reset" hx-target="form" hx-swap="outerHTML">
+</form>
+
+
+<button hx-get="/fill" hx-target="#result">
+	Load Content
+</button>
+<div id="result"></div>
+{% endblock %}

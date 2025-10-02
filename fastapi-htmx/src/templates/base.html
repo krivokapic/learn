@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{% block title %}My Website title {% endblock %}</title>
+	<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+	<link rel="stylesheet" href="/static/css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.css">
+	<script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.7/dist/htmx.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/notyf@3/notyf.min.js"></script>
+	<script src="/static/js/main.js" defer></script>
+</head>
+<body>
+	<header>
+		<h1>krivokapic</h1>
+	</header>
+
+	<main>
+		{% block content %}{% endblock %}
+	</main>
+</body>
+<footer>
+	<p>Footer</p>
+</footer>
+</html>
