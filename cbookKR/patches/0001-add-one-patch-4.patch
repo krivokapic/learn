@@ -1,0 +1,48 @@
+From 3a5b24831191acff42f349662918ca79cc79c90f Mon Sep 17 00:00:00 2001
+From: Vladimir Krivokapic <krivokapicvlada10@gmail.com>
+Date: Mon, 6 Oct 2025 00:06:24 +0200
+Subject: [PATCH] add one patch 4
+
+---
+ cbookKR/patches/0001-add-one-patch-3.patch | 20 ++++++++++++++++++++
+ cbookKR/test3.txt                          |  1 +
+ 2 files changed, 21 insertions(+)
+ create mode 100644 cbookKR/patches/0001-add-one-patch-3.patch
+ create mode 100644 cbookKR/test3.txt
+
+diff --git a/cbookKR/patches/0001-add-one-patch-3.patch b/cbookKR/patches/0001-add-one-patch-3.patch
+new file mode 100644
+index 0000000..ab1ad4c
+--- /dev/null
++++ b/cbookKR/patches/0001-add-one-patch-3.patch
+@@ -0,0 +1,20 @@
++From 424a8cfd0e614c49b732d7c9b141efaf53c916bf Mon Sep 17 00:00:00 2001
++From: Vladimir Krivokapic <krivokapicvlada10@gmail.com>
++Date: Mon, 6 Oct 2025 00:05:45 +0200
++Subject: [PATCH] add one patch 3
++
++---
++ cbookKR/test2.txt | 1 +
++ 1 file changed, 1 insertion(+)
++ create mode 100644 cbookKR/test2.txt
++
++diff --git a/cbookKR/test2.txt b/cbookKR/test2.txt
++new file mode 100644
++index 0000000..8c95218
++--- /dev/null
+++++ b/cbookKR/test2.txt
++@@ -0,0 +1 @@
+++test file 2
++-- 
++2.47.0
++
+diff --git a/cbookKR/test3.txt b/cbookKR/test3.txt
+new file mode 100644
+index 0000000..23ea6e5
+--- /dev/null
++++ b/cbookKR/test3.txt
+@@ -0,0 +1 @@
++test file 3
+-- 
+2.47.0
+
