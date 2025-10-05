@@ -13,6 +13,10 @@ dist/
 build/
 *.egg-info/
 bin/
+node_modules/
+tags
+ctags
+*.json
 
 .php-version
 ###> symfony/framework-bundle ###

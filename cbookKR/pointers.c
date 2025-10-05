@@ -40,13 +40,20 @@ static int *int_copy(int *dest, int *src, int n)
     return dest;
 }
 
+static int sum(int a, int b){
+    return a + b;
+}
+
 int main(void)
 {
 
+    char buff[90];
+    printf("buff address: %p\nbuff[0] = %d\n", &buff, buff[0]);
     mystrcpy2(strB, strA);
     puts(strB);
-    mystrcpy(strC, strB);
-    puts(strC);
+    // puts(strB);
+    // mystrcpy(strC, strB);
+    // puts(strC);
 
     //int_copy(ys, xs, 4);
     //size_t sizey = sizeof(ys) / sizeof(ys[0]);
