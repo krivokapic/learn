@@ -1,6 +1,15 @@
 #include <stdio.h>
 
+int *pointer(int a)
+{
+    int *p = &a;
+
+    return p;
+}
+
 int main(void)
 {
-    printf("Hello world %p\n", &main);
+    int x = 42;
+    int *pX = pointer(x);
+    printf("px %p\n", pX);
 }
