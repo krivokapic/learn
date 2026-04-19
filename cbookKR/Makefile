@@ -5,6 +5,8 @@ pointers: pointers.c
 	@gcc $(CFLAGS) pointers.c -o $(BIN_DIR)/pointers
 dblpointers: double_pointers.c
 	@gcc $(CFLAGS) double_pointers.c -o $(BIN_DIR)/double_pointers
+readbinary: read_binary.c
+	@gcc $(CFLAGS) read_binary.c -o $(BIN_DIR)/read_binary
 ll: linked_list.c
 	@gcc $(CFLAGS) linked_list.c -o $(BIN_DIR)/linked_list
 test: test.c

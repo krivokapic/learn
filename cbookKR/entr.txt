@@ -1,0 +1,1 @@
+find . -name '*.c' | entr -cs 'make pointers && ./bin/pointers'

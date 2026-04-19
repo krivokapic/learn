@@ -1,0 +1,39 @@
+CFLAGS := -fsanitize=address,leak -lm -g3 -O1 -std=gnu11 -Wall -Wextra -Wpedantic -Werror -Wconversion -pedantic
+SRC_DIR := $(CURDIR)/src
+BIN_DIR := $(CURDIR)/bin
+
+# main: $(SRC_DIR)/main.c $(SRC_DIR)/engine.c $(SRC_DIR)/engine.h $(SRC_DIR)/utils.c $(SRC_DIR)/utils.h
+# 	@gcc $(CFLAGS) $(SRC_DIR)/main.c $(SRC_DIR)/engine.c $(SRC_DIR)/utils.c -o $(BIN_DIR)/main
+# 
+# engine: $(SRC_DIR)/engine.c
+# 	@gcc $(CFLAGS) $(SRC_DIR)/engine.c -o $(BIN_DIR)/engine
+
+main: $(BIN_DIR)/main.o $(BIN_DIR)/engine.o $(BIN_DIR)/nn.o $(BIN_DIR)/arena.o
+	@gcc $(CFLAGS) $^ -o $(BIN_DIR)/main
+
+$(BIN_DIR)/main.o: $(SRC_DIR)/main.c $(SRC_DIR)/engine.h $(SRC_DIR)/nn.h
+	@gcc $(CFLAGS) -c $(SRC_DIR)/main.c -o $(BIN_DIR)/main.o
+
+$(BIN_DIR)/engine.o: $(SRC_DIR)/engine.c $(SRC_DIR)/engine.h
+	@gcc $(CFLAGS) -c $(SRC_DIR)/engine.c -o $(BIN_DIR)/engine.o
+
+$(BIN_DIR)/nn.o: $(SRC_DIR)/nn.c $(SRC_DIR)/engine.h $(SRC_DIR)/nn.h
+	@gcc $(CFLAGS) -c $(SRC_DIR)/nn.c -o $(BIN_DIR)/nn.o
+
+# $(BIN_DIR)/utils.o: $(SRC_DIR)/utils.c $(SRC_DIR)/engine.h $(SRC_DIR)/utils.h
+# 	@gcc $(CFLAGS) -c $(SRC_DIR)/utils.c -o $(BIN_DIR)/utils.o
+
+$(BIN_DIR)/arena.o: $(SRC_DIR)/arena.c $(SRC_DIR)/arena.h $(SRC_DIR)/base.h
+	@gcc $(CFLAGS) -c $(SRC_DIR)/arena.c -o $(BIN_DIR)/arena.o
+
+# program: main.o file.o utils.o
+# 	gcc $^ -o $@
+# 
+# main.o: main.c file.h utils.h
+# 	gcc -c main.c -o $@
+# 
+# file.o: file.c file.h
+# 	gcc -c file.c -o $@
+# 
+# utils.o: utils.c utils.h
+# 	gcc -c utils.c -o $@

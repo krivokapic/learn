@@ -1,15 +1,17 @@
 #include <stdio.h>
 
-int *pointer(int a)
-{
-    int *p = &a;
+#define MAX 10
 
-    return p;
+void scale(int *a, int n)
+{
+    *a *= n;
 }
 
+int vladimir = 52;
 int main(void)
 {
-    int x = 42;
-    int *pX = pointer(x);
-    printf("px %p\n", pX);
+    int in_main1 = 42;
+    int in_main2 = 32;
+    scale(&in_main1, 2);
+    printf("px %d\n", in_main1);
 }
